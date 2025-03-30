@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h1> Support Form for Save the Children </h1>
+    <p> Save the Children works to improve the lives of children worldwide by providing education, healthcare, and emergency relief. Supporting this charity means ensuring children receive access to quality education, providing urgent aid to children affected by disasters and conflicts, and advocating for children's rights and well-being globally. </p>
+    
+    <form id="charityForm" onsubmit="myFunction()">
+        <label for="firstName"> First Name (required): </label> <br>
+        <input type="text" id="firstName" required> <br> <br>
+        
+        <label for="lastName"> Last Name (required): </label> <br>
+        <input type="text" id="lastName" required> <br> <br>
+        
+        <label> Sex (required): </label> <br>
+        <input type="radio" name="sex" value="Male" required> Male <br>
+        <input type="radio" name="sex" value="Female" required> Female <br>
+        <input type="radio" name="sex" value="Prefer not to say" required> Prefer not to say <br> <br>
+        
+        <label> Email Address (required):</label><br>
+        <input type="text" id="email" required><br><br>
+        
+        <label>Contact Number (optional):</label><br>
+        <input type="text" id="contact"><br><br>
+        
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    
+    <script>
+        function myFunction() {
+            document.write('Thank you for supporting Save the Children!');
+        }
+    </script>
+</body>
+</html>
